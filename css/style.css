@@ -1,0 +1,141 @@
+body{
+width:100%;
+	height:100vh;
+	background-image:url('../images/raj.jpg');
+
+}
+.om
+{
+text-shadow: 2px 4px 5px blue;
+transition: transform 2s;
+
+}
+.om:hover{
+	transform: rotate(90deg)
+}
+.omm{
+	text-shadow:2px 4px 5px yellow;
+	transition: transform 2s;
+}
+.omm:hover{
+	transform:rotate(90deg)
+}
+.op{
+	text-shadow: 2px 4px 5px green;
+	transform:transform 2s;
+}
+.op:hover{
+	transform:rotate(90deg)
+}
+.batman{
+	position: absolute;
+	animation-name: batmanhero;
+	animation-duration: 7s;
+	animation-timing-function: linear;
+	animation-iteration-count:infinite;
+}
+@keyframes batmanhero{
+	from{left:0}
+	to{left:85%}
+}
+
+
+.pricing{
+		width:100%;
+		height:100vh;
+		padding: 50px;
+		position:relative;
+		
+	}
+	.pricing:before{content:" ";
+	position:absolute;
+	top:0%;
+	bottom:0%;
+	left:0%;
+	right:0%;
+	z-index:-1;
+	background:linear-gradient(to right,blue,green);
+	clip-path: polygon(0% 0%,100% 0%,0% 100%)
+}
+.card:hover{transform:translateY(-30px);
+background-color:lightgrey;
+}
+.form button{border:1px solid yellow;
+	outline: none;
+	box-sizing:18px;
+	padding: 8px;
+	border-radius:16px;
+	color:yellow;
+	font-weight:bold;
+	text-decoration: none;
+	background:transparent;
+	
+}
+
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+li{list-style: none;}
+
+	.header-buttons a{
+	border:1px solid white;
+	border-radius:8px;
+	text-decoration:none;
+	box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+	font-size:bold;
+	padding:2px;
+	color:white;
+	
+
+}
+.header-buttons a:hover{
+	border:1px solid white;
+	border-radius:8px;
+	text-decoration:none;
+	box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+	font-size:bold;
+	padding:2px;
+	color:black;
+	background:white;
+
+}
+
+.header-extradiv{
+	width:100%;
+	height:auto;
+	margin:100px 0;
+	text-align:center;
+}
+.extra-div{
+	background:white;
+	border:medium;
+	padding:50px;
+}
+
+
+.footer a{border:1px solid blue;
+	outline: none;
+	box-sizing:18px;
+	padding: 8px;
+	border-radius:14px;
+	color:blue;
+	font-weight:bold;
+	text-decoration: none;
+	
+	
+}
+.footer a:hover{
+	border:1px solid white;
+	outline: none;
+	box-sizing:18px;
+	padding: 8px;
+	border-radius:14px;
+	color:white;
+	font-weight:bold;
+	color:white;
+
+	background-color:lightgreen;
+	
+}
+
+
+

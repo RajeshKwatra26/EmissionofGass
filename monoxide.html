@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Emission of Monoxide</title>
+</head>
+<body>
+<div class="app-main">
+    <div class="searchInputBox">
+        <input type="text" id="input-box" placeholder="enter city name" autocomplete="off">
+    </div>
+    <div class="weather-body">
+        <div class"Location-details">
+            <div class="city">Mumbai</div>
+            <div class="date"10June></div>
+        </div>
+        <div class="weather-status">
+            <div class="temp">0.463</div>
+            <div class="min-max"></div>
+            <div class="weather"></div>
+            <div class="img"></div>
+        </div></div></div>
+
+<body>
+
+<script> 
+function getAirReport(data){
+fetch("https://api.ambeedata.com/latest/by-city?city=Bengaluru", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": "BbtHS57O1WaBMKqrrKHsKaUhjIvrQQe19V8e4Y5Q"
+        }
+      })
+        .then((res) => res.json())
+        .then((response) => {
+          console.log(response);
+    
+        }).catch((err)=>{
+            console.error(err);
+        });
+
+}
+
+
+
+
+    const searchInputBox=document.getElementById('input-box');
+    searchInputBox.addEventListener('keypress',(event)=>
+    {
+        if(event.keyCode==13)
+        {
+            console.log(searchInputBox.value);
+            getAirReport(searchInputBox.value);
+        }
+    });
+function showAirReport(air)
+{console.log(air);}
+
+
+
+    </script>
+
+
+
+
+        
+</html>
